@@ -1,4 +1,5 @@
 from PySide.QtGui import QPushButton, QWidget
+from libs.const import ENTITY_REVERSE_MAP
 import gui
 
 class EntityField(QPushButton):
@@ -16,7 +17,7 @@ class EntityField(QPushButton):
 
 
     def _goSeeEntity(self, parent):
-        parent.parent.changeState(gui.entityviewer.EntityViewer(parent, self.entity['type']))
+        parent.parent.changeState(gui.entityviewer.EntityViewer(parent, ENTITY_REVERSE_MAP[self.entity['type']]))
 
 
     # TODO
