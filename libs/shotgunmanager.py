@@ -37,7 +37,7 @@ def getentitiesfromshotgun(name):
         for field in fields:
             if fields[field]['data_type']['value'] == 'url' and ent[field]:
                 pp(ent)
-                directory = "data/filestorage/%s/%s/%s" % (name, ent['id'], ent[field]['name'])
+                directory = "data/filestorage/%s/%s/%s" % (name, ent['id']['value'], ent[field]['name'])
                 if not os.path.exists(os.path.dirname(directory)):
                     os.makedirs(os.path.dirname(directory))
                 sg.download_attachment(ent[field], directory)
