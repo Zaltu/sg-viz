@@ -1,4 +1,4 @@
-from PySide.QtGui import QWidget, QTableWidget, QGridLayout, QTableWidgetItem, QPushButton
+from PySide.QtGui import QWidget, QTableWidget, QGridLayout, QTableWidgetItem, QPushButton, QHeaderView
 from gui import cellmanager
 
 from pprint import pprint as pp
@@ -26,6 +26,7 @@ class EntityViewer(QWidget):
         self.grid.cellClicked.connect(self.unedit)
         self.activeCell = None
         self.initData()
+        self.grid.horizontalHeader().setMovable(True)
 
 
     def initData(self):
