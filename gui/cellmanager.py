@@ -1,5 +1,5 @@
 from PySide.QtGui import QWidget
-from gui.cells import entity, text, multientity, thumbnail
+from gui.cells import entity, text, multientity, thumbnail, checkbox, url
 
 
 MAP = {
@@ -7,6 +7,8 @@ MAP = {
     'entity':{'field':entity.EntityField, 'blank':None, 'save':entity.save, 'edit':None},
     'multi_entity':{'field':multientity.MultiEntityField, 'blank':None, 'save':multientity.save, 'edit':None},
     'text':{'field':text.TextField, 'blank':None, 'save':text.save, 'edit':text.edit},
+    'checkbox':{'field':checkbox.CheckBoxField, 'blank':None, 'save':checkbox.save, 'edit':None},
+    'url':{'field':url.FileField, 'blank':None, 'save':url.save, 'edit':None},
     'DEFAULT':{'field':None, 'blank':None, 'save':None, 'edit':None}
 }
 
