@@ -29,7 +29,7 @@ def barfCell(field, mainframe=None):
 
 
 def edit(cell):
-    if cell.ops['edit']:
+    if cell and cell.ops['edit']:
         return cell.ops['edit'](cell)
     return None
 

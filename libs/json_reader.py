@@ -28,8 +28,8 @@ def validateLocalFile(filename, datapath=""):
     return datapath+filename+".json" in glob(buildPath(datapath+"*.json"))
 
 
-def getcomplexdata(filename, datapath=""):
-    if validateLocalFile(filename, datapath):
+def getcomplexdata(filename, datapath="", forcePull=False):
+    if validateLocalFile(filename, datapath) and not forcePull:
         data = read(datapath+filename)
         print "Loaded from file"
     else:

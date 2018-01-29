@@ -10,3 +10,7 @@ class DataBase():
         if entity not in self.loadedents:
             self.loadedents[entity] = Entity(entity)
         return self.loadedents[entity]
+
+
+    def reloadTable(self, entity):
+    	self.loadedents[entity] = Entity(entity, forcePull=True)
