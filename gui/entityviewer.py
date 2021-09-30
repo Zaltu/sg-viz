@@ -1,5 +1,5 @@
-from PySide.QtGui import QWidget, QTableWidget, QGridLayout, QTableWidgetItem, QPushButton, QHeaderView, QMenu
-from PySide.QtCore import Qt
+from PySide2.QtWidgets import QWidget, QTableWidget, QGridLayout, QTableWidgetItem, QPushButton, QHeaderView, QMenu
+from PySide2.QtCore import Qt
 from gui import cellmanager
 from libs import shotgunmanager, json_reader
 
@@ -36,7 +36,7 @@ class EntityViewer(QWidget):
         self.grid.cellClicked.connect(self.unedit)
         self.activeCell = None
         self.initData()
-        self.grid.horizontalHeader().setMovable(True)
+        self.grid.horizontalHeader().setSectionsMovable(True)
         self.grid.horizontalHeader().setContextMenuPolicy(Qt.CustomContextMenu)
 
         self.grid.horizontalHeader().customContextMenuRequested.connect(self.hideF)
@@ -105,6 +105,6 @@ class EntityViewer(QWidget):
         try:
             rules = json_reader.read("data/pagesettings/%s" % self.entity)
         except IOError:
-            print "No page settings saved for %ss." % self.entity
+            print("No page settings saved for %ss." % self.entity)
             return allData.data[0]
         return rules

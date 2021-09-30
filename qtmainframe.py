@@ -1,4 +1,4 @@
-from PySide.QtGui import QWidget, QGridLayout, QLayout, QDesktopWidget
+from PySide2.QtWidgets import QWidget, QGridLayout, QLayout, QDesktopWidget
 from gui.entityselec import EntitySelector
 
 from libs.pseudodb import DataBase

@@ -13,7 +13,7 @@ def getentitydatafromshotgun():
         if 'project' in fields:
             if entityData[entityName]['visible']['value']:
                 visibleEntities.append(entityData[entityName]['name']['value'])
-                print "\""+entityData[entityName]['name']['value']+"\": \"" + entityName + "\","
+                print("\""+entityData[entityName]['name']['value']+"\": \"" + entityName + "\",")
     return visibleEntities
 
 
@@ -23,7 +23,7 @@ def getentitiesfromshotgun(name):
     if name in const.ENTITY_MAP:
         sgname = const.ENTITY_MAP[name]
     fields = sg.schema_field_read(sgname)
-    rawents = sg.find(sgname, [['project', 'is', {'type':'Project', 'id':70}]], fields.keys())
+    rawents = sg.find(sgname, [['project', 'is', {'type':'Project', 'id':70}]], list(fields.keys()))
     pp(rawents)
     clean = []
     for ent in rawents:

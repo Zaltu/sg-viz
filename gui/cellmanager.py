@@ -1,4 +1,4 @@
-from PySide.QtGui import QWidget
+from PySide2.QtWidgets import QWidget
 from gui.cells import entity, text, multientity, thumbnail, checkbox, url
 
 

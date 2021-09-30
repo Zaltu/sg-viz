@@ -1,4 +1,4 @@
-from PySide.QtGui import QPushButton, QWidget
+from PySide2.QtWidgets import QPushButton, QWidget
 from libs.const import ENTITY_REVERSE_MAP
 import gui
 

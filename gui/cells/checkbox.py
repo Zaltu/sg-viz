@@ -1,4 +1,4 @@
-from PySide.QtGui import QCheckBox, QWidget
+from PySide2.QtWidgets import QCheckBox, QWidget
 from libs.const import ENTITY_REVERSE_MAP
 import gui
 

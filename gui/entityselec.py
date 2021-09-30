@@ -1,4 +1,4 @@
-from PySide.QtGui import QWidget, QGridLayout, QPushButton, QLabel, QComboBox
+from PySide2.QtWidgets import QWidget, QGridLayout, QPushButton, QLabel, QComboBox
 from gui.entityviewer import EntityViewer
 from libs import json_reader, const
 from shotgun_api3 import Shotgun

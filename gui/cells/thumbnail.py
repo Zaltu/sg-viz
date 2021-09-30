@@ -1,4 +1,5 @@
-from PySide.QtGui import QLabel, QPixmap, QIcon
+from PySide2.QtWidgets import QLabel
+from PySide2.QtGui import QPixmap, QIcon
 from libs import json_reader
 import os
 

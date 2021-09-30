@@ -1,4 +1,4 @@
-from PySide.QtGui import QPushButton, QWidget, QGridLayout
+from PySide2.QtWidgets import QPushButton, QWidget, QGridLayout
 from gui.cells.entity import EntityField
 
 class MultiEntityField(QWidget):

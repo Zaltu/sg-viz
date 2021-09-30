@@ -1,4 +1,5 @@
-from PySide.QtGui import QTextBrowser, QDesktopServices
+from PySide2.QtWidgets import QTextBrowser
+from PySide2.QtGui import QDesktopServices
 import gui
 
 class FileField(QTextBrowser):

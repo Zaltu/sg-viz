@@ -2,8 +2,8 @@
 This file holds all the constants necessary to recreate Shotgun data locally.
 """
 
-API_KEY = "2b3f3b6e442242c067501a9e17503bac1d27b6ea244a4e4b5987e26d5f6520e2"
-API_NAME = "Samuel - API"
+API_KEY = "pjyvy5znakgltt*pmnnhNkaey"
+API_NAME = "AIGun"
 SHOTGUN_URL = "https://objeus.shotgunstudio.com"
 
 ENTITY_PATH = "data/entities/"

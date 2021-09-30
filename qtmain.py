@@ -1,6 +1,6 @@
 # --coding:utf-8--
 import sys
-from PySide.QtGui import QApplication
+from PySide2.QtWidgets import QApplication
 from qtmainframe import MainFrame
 
 APP = QApplication(sys.argv)

@@ -1,4 +1,4 @@
-from PySide.QtGui import QTextEdit, QLabel
+from PySide2.QtWidgets import QTextEdit, QLabel
 
 
 class TextField(QLabel):
